@@ -9,7 +9,7 @@ def logger():
     app.logger.warning('METHOD: %s', request.method)
     app.logger.warning('HEADERS: %s', request.headers)
     app.logger.warning('QUERY_PARAMS: %s', request.args)
-    app.logger.warning('POST_DATA: %s', request.form)
+    app.logger.warning('POST_DATA: %s', request.data)
     return 'OK'
 
 
